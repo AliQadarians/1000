@@ -1,0 +1,17 @@
+count = int(input('Enter number: '))
+print('I\t\tPI')
+sum = 0
+sng = 1
+k = 3.0
+
+for i in range(0,count+1):
+    if i == 0:
+        sum += 4.0
+        sng *= -1
+    else:
+        sum += (sng * 4 / k)
+        k += 2.0
+        sng *= -1
+    print('{0}\t\t{1}'.format(i,sum))
+
+    
